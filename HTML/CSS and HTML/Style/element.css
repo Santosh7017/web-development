@@ -1,3 +1,8 @@
-*{
-    list-style-type: none;
+p,
+a
+{
+    color: green;
+}
+li{
+    list-style-type: lower-alpha;
 }
