@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
+    <link rel="stylesheet" href="HTML and css(inside)/CSS/paymentInformation.css">
 
 </head>
-<body>
+<body">
+    <div class="container">
     <form action=""></form>
     <h1>Payment Form</h1>
-    <h2>Contact Information</h2>
+    <hr>
+    <h2>User Information</h2>
     <p>Required Fields are followed by *</p>
-    <p>Name: * <input type="text" name="name" required></p>
+    <p>Name: * <input type="text" name="name" placeholder="Enter the name" required></p>
     <fieldset>
         <legend>Gender</legend>
     <p>
         Male * <input type="radio" name="gender" id="Male" required>
-        FeMale * <input type="radio" name="gender" id="FeMale" required>
+        Female * <input type="radio" name="gender" id="Female" required>
     </p>
 </fieldset>
-<p>Address: <textarea name="address" id="address" cols="10" rows="3"></textarea></p>
+<p>Address: 
+    <textarea placeholder="Enter your address" name="address" id="address" cols="175" rows="2"></textarea></p>
     <p>Email:* <input type="email" name="email" id="email" required></p>
     <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
     <hr>
@@ -33,7 +37,7 @@
         </select>
     </p>
     Card Nmber* <input type="number" name="card number" id="card number" required>
-</body>
+
 <p>
     Expiration Date:* <input type="date" name="exp_date" id="exp_date" required>
 </p>
@@ -41,4 +45,6 @@
     CVV* <input type="password" name="cvv" id="cvv" required>
 </p>
 <input type="submit" value="Pay Now">
+</div>
+</body>
 </html>
