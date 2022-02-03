@@ -10,12 +10,13 @@
     <style>
         
         .item{
-            background-color: aquamarine;
+            background-color: rgb(109, 180, 61);
             position:absolute;
-            text-align: center;
-            border: 2px;
+            text-align:center;
+            line-height:80px;
+            border: 2px solid none;
             height: 100px;
-            width: 100px;
+            width: 100px;   
             margin: 50px;
             /* transition: 800ms ease-in-out 0.5s;
             /* transform: rotate(20deg);    */
@@ -26,13 +27,17 @@
                     /* transition: 1s ease-in-out; */
                     /* transition: 1s steps(3,end); */
                     
+                    
+            transition: 1s ease-in ;
 
         }
         .item:hover{
            /* height: 400px;
            width:  400px; */
            /* transform: scale(1.5) translate(150px); */
-           transform: rotate(360deg);
+           transform:  translate(80px) rotate(360deg);
+           border-radius: 50%;
+          
 
 
 
@@ -42,6 +47,6 @@
 </head>
 <body>
     
-        <div class="item" id="a"> 1 </div>
+        <div class="item">  </div>
 </body>
 </html>
