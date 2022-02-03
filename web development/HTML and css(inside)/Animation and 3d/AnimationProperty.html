@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amination Properties</title>
+    <style>
+        @keyframes changeShape {
+
+            /* from{
+                border-radius: 0%;
+
+            }
+            to{
+                border-radius: 50% ;
+            } */
+
+            0%{
+                border-radius: 0%;
+            }
+            25%{
+                border-radius: 12.5%;
+            }
+            50%{
+                border-radius: 20%;
+            }
+            100%{
+                border-radius: 50%;
+            }
+
+            
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            top: 40%;
+            left: 40%;
+            background-color: rgb(134, 111, 6);
+            /* animation: changeShape 1s cubic-bezier(0.075, 0.82, 0.165, 1) 4 alternate;  */
+            animation: changeShape 1s ease-in-out 4 alternate; 
+            /* animation: changeShape 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 4 alternate;  */
+
+        }
+    </style>
+</head>
+<body>
+    <div>  </div>
+</body>
+</html>
