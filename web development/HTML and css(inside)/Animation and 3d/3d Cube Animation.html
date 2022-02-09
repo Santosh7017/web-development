@@ -6,30 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d Cube animaition</title>
     <style>
+        x
         body{
             background-color: antiquewhite;
         }
-        .cube{
-            height: 200px;
+        .scene{
+            margin: 100px;
             width: 200px;
+            height:200px;
+        }
+        .cube{
+            height: inherit;
+            width: inherit;
             position:relative;
             margin:100px;
             transform-style: preserve-3d;
             perspective: 1000px;
-            transform: rotateX(25deg) rotateY(-25deg);  
+            /* transform: rotateX(25deg) rotateY(-25deg);   */
+            transform: rotateY(180deg);
         }
         .face{
-            height: 100%;
-            width: 100%;
+            height: inherit;
+            width: inherit;
                 position: absolute;
                 top: 20%;
                 left: 20%;
                
-                transition: all 1s;
+                transition:  1s ease-in-out ;
 
         }
         .one{
             background-color: rgb(206, 126, 29);
+            transform: rotateY(40deg);
+            transform: translate3d(0,0, 100px);
             /* z-index: 10; */
         }
         /* .one:hover{
@@ -39,15 +48,57 @@
 
         .two{
             background-color: yellowgreen;
-            transform: rotateY(90deg) translatez(-100px) translateX(-100px);
+            /* transform: rotateY(90deg) translatez(-100px) translateX(-100px); */
+            transform: rotateY(180deg) translate3d(0,0,100px);
+
+        }
+        .three{
+            background-color: blue;
+            /* transform: rotate(90deg) translateZ(100px) translateX(100px); */
+           transform: rotateY(-90deg)   translate3d(0,0,100px);
+
+
+        }
+        .four{
+            background-color: yellow;
+            transform: rotateX(90deg) translate3d(0,0,100px);
+        }
+        .five{
+            background-color: green;
+           transform: rotateX(-90deg) translate3d(0,0,100px) ;
+        }
+        .six{
+            background-color:rebeccapurple ;
+            transform: rotateY(90deg) translate3d(0,0,100px);
+        }
+
+        #two:checked~.scene .cube{
+            transform: rotateY(180deg);
+        }
+        #three:checked~.scene .cube{
+            transform: rotateX(80deg);
         }
     </style>
 </head>
 
 <body>
+    <input type="radio" checked id="one" name="select-face"/>    
+    <input type="radio" id="two" name="select-face">
+    <input type="radio" id="three" name="select-face">
+    <input type="radio" id="four" name="select-face">
+    <input type="radio" id="five" name="select-face">
+    <input type="radio" id="six" name="select-face">
+
+
+    <div class="scene">
     <div class="cube">  
         <div class="face one"></div>
         <div class="face two"></div>
+        <div class="face three"></div>
+        <div class="face four"></div>
+        <div class="face five"></div>
+        <div class="face six"></div>
     </div>
+</div>
 </body>
 </html>
