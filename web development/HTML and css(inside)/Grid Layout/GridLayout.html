@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-rows: 200px 200px 200px; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            /* grid-auto-rows: 200px; */
+            /* grid-auto-columns: 200px; */
+            /* grid-auto-rows: minmax(50px,auto); */
+            grid-template-columns: repeat(auto-fill,minmax(200px,4fr));
+        }
+        .items{
+             background-color: bisque;
+             border: 3px green solid;
+             border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia pariatur et optio similique voluptas quo, necessitatibus suscipit placeat quae velit illo eaque ipsa ratione debitis beatae consequuntur earum saepe maiores architecto facilis iusto. Neque ea beatae dolore inventore quam veritatis labore, sed quos odio consectetur. Quod, alias error! Porro labore repudiandae, temporibus minus enim sapiente maiores voluptas praesentium sint debitis. Natus sed iure esse minus. Dolorem voluptatum nisi repellat aspernatur itaque, perspiciatis accusamus tempore voluptatibus ratione consequuntur, sequi reiciendis enim tenetur, blanditiis veniam. Harum maiores nostrum quidem amet, fuga sit, adipisci dignissimos, hic labore expedita eveniet. Explicabo nisi reiciendis expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, blanditiis quo! Nam, ab voluptatem eius at dolore quibusdam repudiandae, magni laboriosam perferendis fugit aut repellendus facilis esse neque saepe deserunt ex placeat veritatis inventore perspiciatis itaque ratione ullam? Magni aliquid ad odio atque id corrupti quibusdam ipsa. Quos aperiam, provident a fuga quae, molestiae expedita voluptas eaque soluta quibusdam officiis quas laborum reiciendis? Corrupti maxime odio exercitationem voluptatem pariatur molestiae repellendus sed similique quasi aperiam, labore delectus obcaecati sunt in natus dolore eligendi consequuntur nobis dolor animi ducimus autem aut eos facere? Nulla, ducimus unde repellat neque aliquam explicabo molestiae. </div>  -->
+    
+    <div class="items">dabba 1</div>
+    <div class="items">dabba 2</div>
+    <div class="items">dabba 3</div>
+    <div class="items">dabba 4</div>
+    <div class="items">dabba 5</div>
+    </div>
+</body>
+</html>
