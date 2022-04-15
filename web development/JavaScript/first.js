@@ -1,4 +1,4 @@
-
+"use strict"
 /*
 there are 6 primitive datatype in javascript :
 number : 64bit
@@ -69,13 +69,32 @@ typeof Nan;
 */
 
 
-let hello  = document.querySelector('button');
-hello.addEventListener('click', input);
-// function show() {
-//     alert("Hello world");
+
+
+// let hello  = document.querySelector('button');
+// hello.addEventListener('click', input);
+// // function show() {
+// //     alert("Hello world");
+// // }
+
+// function input(){
+// let name = prompt('Enter Name of student');
+// hello.textContent = 'Roll No. 1:' + name;
 // }
 
-function input(){
-let name = prompt('Enter Name of student');
-hello.textContent = 'Roll No. 1:' + name;
-}
+// var Button = document.getElementById('btn');
+// Button.addEventListener('click',function(){
+//     alert("helo");
+// });
+
+
+var box = document.getElementById('box');
+var clickCount = document.getElementById('click-count');
+ count = 0;
+box.addEventListener('click',function(){
+    
+    count++;
+    console.log(count);
+    clickCount.innerText = count + " ";
+
+})
