@@ -6,23 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="calculatorStyle.css">
+    <script src="calculator.js"></script>
 </head>
 <body>
-    
-    <div id="calculator"> 
-        <div>calculator</div>
-        <div id="display-container">
-            <p id="display"></p>
-        </div>
-        <div class="button"> AC </div>
-        <div class="button" data-value="7"> 
-            <span>7</span>
-</div>
-<div class="button" data-value="8">
-<span>8</span>
-</div>
+    <div>
+            <header id="screen"></header>
+            <table>
+                <tbody>
+                    <tr class="orange">
+                        <td onclick="clearScr()">AC</td>
+                        <td onclick="sendNum('*0.01')">%</td>
+                        <td onclick="sendNum('/')">/</td>
+                    </tr>
+
+                    <tr class="orange">
+                        <td onclick="sendNum('+')">+</td>
+                        <td onclick="sendNum('-')">-</td>
+                        <td onclick="sendNum('*')">X</td>
+
+                    </tr>
+
+                    <tr>
+                        <td onclick="sendNum('7')">7</td>
+                        <td onclick="sendNum('8')">8</td>
+                        <td onclick="sendNum('9')">9</td>
+                    </tr>
+
+                    <tr>
+                        <td onclick="sendNum('4')">4</td>
+                        <td onclick="sendNum('5')">5</td>
+                        <td onclick="sendNum('6')">6</td>
+                    </tr>
+
+                    <tr>
+                        <td onclick="sendNum('1')">1</td>
+                        <td onclick="sendNum('2')">2</td>
+                        <td onclick="sendNum('3')">3</td>
+                    </tr>
 
 
+                    <tr>
+                        <td onclick="'.'">.</td>
+                        <td onclick="'0'">0</td>
+                        <td onclick="equalTo()">=</td>
+
+                            </tr>
+                    </tbody>
+            </table>
     </div>
+
+
 </body>
 </html>
