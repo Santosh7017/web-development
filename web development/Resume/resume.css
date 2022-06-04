@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+}
+/* body header */
+
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    margin-top: -15.8px;
+    background-image: url(macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* removing bullet */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    
+}
+
+/* change into .horizontal-list */
+.horizontal-list li{
+    display: inline-block;
+    margin: 10px 8px 8px 0px;
+}
+
+/* change the href colour to white and removing underline from the link */
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+    transition: color 0.5s, border-bottom 4s;
+
+    
+    
+}
+
+.horizontal-list li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid green;
+}
+
+/* center allignment of the nevigation menu  */
+.text-center{
+    text-align: center;
+   
+
+}
+
+/* name  and social icond*/
+#name-social-container{
+margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 00.1rem;
+    color: whitesmoke;
+    font-weight: 700;
+    margin-bottom: 00.5rem;
+}
+
+#social-icons li a img{
+  height: 10px;
+  width: 10px;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
