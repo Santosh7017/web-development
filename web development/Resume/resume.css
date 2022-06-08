@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    opacity:  100%;
+    /* opacity:  100%; */
     /* background-image:linear-gradient(120deg,rgba(0, 0, 255, 0.539),rgba(0, 255, 255, 0.539)); */
     /* background: radial-gradient(cyan,yellow); */
     background-color: antiquewhite;
@@ -103,9 +103,120 @@ height: 100%;
 width: 100%;
 border-radius: 50%;
 border: 3px solid white;
-box-shadow: 0px 0px 8px 6px rgba(230, 196, 196, 0.3);
+}
+#image img:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
-section:target{
-    
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
+
+#skill-sp{
+    font-size: 25px;
+}
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+
+section:target {
+    background-color: cyan;
+}
+
+.section-heading span {
+
+    font-size: var(--section-heading-font-size);
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* skill sectin */
+
+.skills-display{
+    width: 70%;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    margin: 20px;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    overflow: hidden;
+   
+}
+.skill-name{
+    font-size: 15px;
+    color: white;
+    padding: 6px 0px 10px 30px;
+}
+.skill-name span {
+    margin: 0;
+}
+
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ff5722;
+}
+
+
+.mb-teal {
+    background-color: #009688;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+.m-blue {
+    color: #2857a4;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.eighty-five-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.seventy-five-percent {
+    height: inherit;
+    width: 75%;
+}
+
+/* common margin classes */
+.m0 {
+    margin: 0;
+}
+
+
+
+
