@@ -438,7 +438,7 @@ textarea {
     color: #13386fe0;
 }
 
-#contact .social-icons li a i {
+#contact .social-links li a i {
     font-size: 1.2rem;
     margin: 40px 10px 10px;
     padding: 10px 14px 20px 10px;
@@ -475,7 +475,6 @@ button:focus {
 .text-highlight {
     color: #2857a4;
     font-weight: 600;
-
 }
 
 
@@ -520,9 +519,83 @@ button:focus {
     height: inherit;
     width: 50%;
 }
+.social-links li:nth-child(1) a:hover {
+    color: dodgerblue;
+  }
+  
+  .social-links li:nth-child(2) a:hover {
+    color: orange;
+  }
+  
+  .social-links li:nth-child(3) a:hover, .social-links li:nth-child(5) a:hover {
+    color: red;
+  }
+  
+  .social-links li:nth-child(4) a:hover {
+    color: #4040ff;
+  } 
+  
+  .social-links i:hover{
+    transform: scale(1.25);
+    transition:  0.3s ;
+    text-shadow: 0px 0px 20px #a59f9f;
+    
+}
 
 
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
 
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -9.3% !important;
+    }
+
+    #timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
 
 
 
