@@ -200,6 +200,12 @@ section:nth-child(2n + 1) {
     line-height: 28px;
     font-size: 1.1rem;
     margin: auto;
+    text-decoration: none;
+    
+}
+
+.para a{
+    text-decoration: none;
 }
 
 
