@@ -47,10 +47,12 @@ body{
     width: 80%;
     justify-content: center;
     margin: auto;
+    position: relative;
 }
 
 
 .counter{
+    background-color: aliceblue;
     display: inline-block;
     width: 15%;
     height: 80px;
@@ -76,7 +78,7 @@ p.next{
 }
 
 p.animate{
-    transition: o.5s;
-    top: 0;
+    transition: all o.5s;
+    top: 0px;
 }
 
