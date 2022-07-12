@@ -276,6 +276,7 @@ section:nth-child(2n + 1) {
     left: 53%;
 }
 
+
 .timeline-box:nth-child(2n+1)::after {
     right: -11.8%;
 }
@@ -403,7 +404,7 @@ section:nth-child(2n + 1) {
 
 #contact {
     background-color: #0abcf9;
-    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    background-image: linear-gradient(50deg, #2857a4 , #403066 );
     color: white;
     padding-bottom: 40px;
 }
