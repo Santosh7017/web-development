@@ -20,3 +20,22 @@ $('div').css({
     height: "100px",
     backgroundColor:"cyan"
 })
+
+// *  Event Listner
+
+// $('div').click(function(){
+//     alert("Div clicked");
+// });
+
+$('div').on('click',function(){
+    var element = $(this);
+    element.width(element.width()+10 +"px")
+    alert("Div clicked");
+});
+
+$('a').on('click',function(event){
+    event.preventDefault();
+    alert("Anchor tag clikced");
+});
+
+
