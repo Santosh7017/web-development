@@ -1,3 +1,6 @@
+
+
+
 // var para1 = document.getElementById('para1');
 // para1.innerHTML = "Welcome";
 
@@ -39,3 +42,4 @@ $('a').on('click',function(event){
 });
 
 
+// ! Jquery ui based on core jquery
