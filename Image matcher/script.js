@@ -176,6 +176,10 @@ const initializer = () => {
   let cardValues = generateRandom();
   console.log(cardValues);
   matrixGenerator(cardValues);
+
 };
 
 var exp = 0;
+
+};
+
