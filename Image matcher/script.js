@@ -177,3 +177,5 @@ const initializer = () => {
   console.log(cardValues);
   matrixGenerator(cardValues);
 };
+
+var exp = 0;
