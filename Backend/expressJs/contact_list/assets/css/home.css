@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    text-align:center;
+}
+#page-heading{
+    text-align: center;
+    margin-top: 25px;
+    color: grey;
+}
+.input{
+    border: 0 ;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.728);
+}
+button{
+    border: 1px solid grey;
+    color: white;
+    background-color: grey;
+}
+.container{
+    
+    width: 30rem;
+}
+
+.entries{
+    background-color: rgb(20, 117, 187);
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-bottom: 2px;
+    color: white;
+    justify-content: space-between;
+    
+}
+.entries > .phone{
+    padding-right: 10px;
+}
+.entries > .name{
+    padding-left: 10px;
+}
