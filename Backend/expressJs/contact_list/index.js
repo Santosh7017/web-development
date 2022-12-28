@@ -1,4 +1,3 @@
-
 // request
 // *get
 // *post
@@ -16,6 +15,22 @@ const app = express();
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
+var contactList = [
+{
+    name:"Arpan",
+    Phone:"1111111111",
+},
+{
+    name:"Tony  Stark",
+    Phone:"1234567890"
+},
+{
+    name: "abcd",
+    Phone:"0987654321"
+}
+
+]
+
 
 
 
@@ -23,7 +38,11 @@ app.set('views',path.join(__dirname,'views'));
 
 
 app.get('/',function(req,res){
-    return res.render('home',{title: "Contact List"});
+    return res.render('home',{
+        title: "Contact List",
+        contact_List: contactList
+
+    });
 
 
     // console.log(__dirname);
