@@ -21,7 +21,7 @@ button{
     width: 30rem;
 }
 
-.entries{
+.contact{
     background-color: rgb(20, 117, 187);
     text-decoration: none;
     list-style: none;
@@ -31,9 +31,19 @@ button{
     justify-content: space-between;
     
 }
-.entries > .phone{
+.contact > .phone{
     padding-right: 10px;
 }
-.entries > .name{
+
+.details{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+}
+ .name{
     padding-left: 10px;
+}
+
+.icon{
+    color: gainsboro;
 }
